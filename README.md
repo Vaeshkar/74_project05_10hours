@@ -3,6 +3,8 @@
 
 A simple, responsive Habit Tracker built with React + Vite. Users can create custom habits, track daily progress, and visualize their completion—all with persistent local storage.
 
+## live demo: [Habit Tracker Demo](https://wbshabitracker.netlify.app/)
+
 ## 🚀 Project Overview
 
 This project tests fundamental React skills like:
