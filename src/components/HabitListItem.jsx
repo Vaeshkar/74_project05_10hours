@@ -1,17 +1,24 @@
+import ProgressActions from './ProgressActions';
+
 /**
  * HabitListItem component displays a single habit item.
  *
- * @param {*} { habit } 
+ * @param {*} { habit, onIncrement, onDecrement } 
  * @return 
  */
 
-const HabitListItem = ({ habit }) => {
+const HabitListItem = ({ habit, onIncrement, onDecrement }) => {
   return (
-    <li className="flex justify-between items-center border-b py-2">
-      <span className="font-medium">{habit.name}</span>
-      <span className="text-sm text-gray-500">
-        {habit.count} / {habit.goal}
-      </span>
+    <li className="border p-4 rounded shadow flex justify-between items-center">
+      <div>
+        <h3 className="font-bold">{habit.name}</h3>
+        <p className="text-sm text-gray-600">Progress: {habit.count} / {habit.target}</p>
+      </div>
+      <ProgressActions
+        habitId={habit.id}
+        onIncrement={onIncrement}
+        onDecrement={onDecrement}
+      />
     </li>
   );
 };

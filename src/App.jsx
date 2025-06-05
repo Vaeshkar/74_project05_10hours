@@ -8,7 +8,6 @@ import HabitList from './components/HabitList'
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 
-// Main application component
 function App() {
   // State to manage habits
   // Initialize habits from localStorage or return an empty array

@@ -67,9 +67,13 @@ This project is an opportunity to strengthen your React fundamentals while build
 
 ## 📋 Changelog
 
+### v2.1.0
+
+- Refactored the process actions to the `ProgressActions` component
+
 ### v2.0.0
 
-- Refactored components for better structure (Form, List, Item, etc.)
+- Refactored components for better structure (`HabitForm`, `HabitList`, `HabitListItem`, `Header`)
 - Added Toastify for user feedback when goals are reached
 - Local Storage now loads habits correctly on refresh
 - New favicon and updated page title
