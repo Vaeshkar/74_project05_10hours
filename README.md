@@ -67,6 +67,12 @@ This project is an opportunity to strengthen your React fundamentals while build
 
 ## 📋 Changelog
 
+### v2.5.0
+
+- mobile delete button solution `useLongPress`
+- added `useLongPress` hook for better mobile experience
+- small UX explanation for the delete button
+
 ### v2.4.0
 
 - finishing up the styling of the habit tracker
