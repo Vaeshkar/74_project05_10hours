@@ -1,5 +1,4 @@
 import HabitListItem from './HabitListItem';
-import ProgressActions from './ProgressActions';
 
 /**
  * HabitList component for displaying a list of habits

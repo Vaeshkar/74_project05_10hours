@@ -67,6 +67,11 @@ This project is an opportunity to strengthen your React fundamentals while build
 
 ## 📋 Changelog
 
+### v2.3.0
+
+- styling the list items to be more visually appealing
+- added 3 new icons to the list items
+
 ### v2.1.0
 
 - Refactored the process actions to the `ProgressActions` component

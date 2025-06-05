@@ -10,3 +10,12 @@ html {
   min-height: 100vh;
   background-color: #f0f0f0; /* Light gray background */
 }
+
+body {
+  font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Arial', sans-serif;
+}
+
+/* In index.css or a component-level .css file */
+.btn {
+  @apply px-4 py-2 text-black bg-white border border-black rounded-full hover:bg-black hover:text-white transition-colors;
+}
