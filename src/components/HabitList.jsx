@@ -1,4 +1,3 @@
-
 /**
  * HabitList component for displaying a list of habits
  *

@@ -62,3 +62,25 @@ habit-tracker/
 
 ---
 This project is an opportunity to strengthen your React fundamentals while building something useful and real. Happy coding!
+
+---
+
+## 📋 Changelog
+
+### v2.0.0
+
+- Refactored components for better structure (Form, List, Item, etc.)
+- Added Toastify for user feedback when goals are reached
+- Local Storage now loads habits correctly on refresh
+- New favicon and updated page title
+- UI improvements for input alignment and habit display
+
+### v1.0.0
+
+- Deployed initial version to Netlify
+- Initial release with basic App setup
+- Printing "Hello World!" on the screen
+- Basic Vite configuration
+- Initial commit with React and Vite setup
+- Added README with project overview and requirements
+- Basic CSS styles for layout

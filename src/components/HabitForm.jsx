@@ -17,7 +17,7 @@ const HabitForm = ({ setHabits }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (!name || isNaN(parseInt(target))) return;
+    if (!name || isNaN(parseInt(target))) return; // Validate inputs
 
     const habit = {
       id: Date.now(),
@@ -26,30 +26,30 @@ const HabitForm = ({ setHabits }) => {
       count: 0,
     };
 
-    setHabits((prev) => [...prev, habit]);
-    setName('');
-    setTarget('');
-    toast.success('Habit added!');
+    setHabits((prev) => [...prev, habit]); // Update habits state
+    setName(''); // Clear name input
+    setTarget(''); // Clear target input
+    toast.success('Habit added!'); // Show success notification
     
   };
 
   return (
     <form onSubmit={handleSubmit} className="mt-4">
       <div className="flex">
-        <input
+        <input 
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Enter a new habit"
           className="border p-2 rounded flex-1"
-        />
+        /> {/* // Input for habit name */}
         <input
           type="number"
           value={target}
           onChange={(e) => setTarget(e.target.value)}
           placeholder="Target"
           className="border p-2 rounded w-1/5 ml-2"
-        />
+        /> {/* // Input for habit target */}
       </div>
       <button type="submit" className="bg-blue-500 text-white p-2 rounded mt-2">
         Add Habit
