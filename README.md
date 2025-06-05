@@ -67,6 +67,15 @@ This project is an opportunity to strengthen your React fundamentals while build
 
 ## 📋 Changelog
 
+### v2.4.0
+
+- finishing up the styling of the habit tracker
+- added bg svg image to the background
+- made the progress bar change color based on the completion percentage
+- added footer with links to the GitHub repo and live demo
+- added delete button to remove habits
+- Made interesting delete button positioning and styling
+
 ### v2.3.0
 
 - styling the list items to be more visually appealing

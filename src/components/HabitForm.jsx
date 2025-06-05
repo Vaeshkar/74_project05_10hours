@@ -41,17 +41,17 @@ const HabitForm = ({ setHabits }) => {
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Enter a new habit"
-          className="border p-2 rounded flex-1"
+          className="border-2 p-2 rounded-full flex-1 placeholder:pl-2 focus:outline-none focus:ring-2 focus:ring-[#4a90e2] focus:border-[#4a90e2] transition-colors duration-300"
         /> {/* // Input for habit name */}
         <input
           type="number"
           value={target}
           onChange={(e) => setTarget(e.target.value)}
-          placeholder="Target"
-          className="border p-2 rounded w-1/5 ml-2"
+          placeholder="Goal"
+          className="border-2 p-2 rounded-full w-1/5 ml-2 placeholder:pl-2 focus:outline-none focus:ring-2 focus:ring-[#4a90e2] focus:border-[#4a90e2] transition-colors duration-300"
         /> {/* // Input for habit target */}
       </div>
-      <button type="submit" className="bg-blue-500 text-white p-2 rounded mt-2">
+      <button type="submit" className="btn mt-4">
         Add Habit
       </button>
     </form>

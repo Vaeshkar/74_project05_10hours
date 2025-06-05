@@ -5,9 +5,9 @@
  */
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white p-4 shadow-md text-center">
-      <h1 className="text-2xl font-bold">WBS | Habit Tracker App – Project 05</h1>
-        <p className="text-sm">Track your habits and stay productive!</p>
+    <header className="bg-secondary text-black p-4 shadow-md text-center rounded-b-3xl">
+      <h1 className="text-5xl font-bold mt-4">Habit Tracker App</h1>
+        <p className="text-lg mt-4 mb-1">Track your habits and stay productive!</p>
     </header>
   );
 }

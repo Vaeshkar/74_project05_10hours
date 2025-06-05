@@ -3,11 +3,11 @@ import HabitListItem from './HabitListItem';
 /**
  * HabitList component for displaying a list of habits
  *
- * @param {*} { habits, onIncrement, onDecrement } 
+ * @param {*} { habits, onIncrement, onDecrement, onDelete } 
  * @return 
  */
 
-const HabitList = ({ habits, onIncrement, onDecrement }) => {
+const HabitList = ({ habits, onIncrement, onDecrement, onDelete }) => {
   return (
     <ul className="mt-4 space-y-4">
       {habits.map((habit) => (
@@ -16,6 +16,7 @@ const HabitList = ({ habits, onIncrement, onDecrement }) => {
           habit={habit}
           onIncrement={() => onIncrement(habit.id)}
           onDecrement={() => onDecrement(habit.id)}
+          onDelete={() => onDelete(habit.id)}
         />
       ))}
     </ul>

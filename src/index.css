@@ -1,0 +1,98 @@
+@tailwind utilities;
+
+
+:root {
+  --primary-color: #4a90e2;
+  --secondary-color: #fdd603;
+  --main-color: #eeede4;
+  --accent-color: #f5a623;
+  --background-color: #eeede4;
+  --text-primary-color: #000;
+  --text-secondary-color: #555;
+  --border-color: #cccccc;
+  --font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Arial', sans-serif;
+}   
+
+html {
+  @apply h-full;
+  background-color: var(--primary-color);
+  background-size: cover;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+html::before {
+  content: '';
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  transform: translate(-25%, -25%) ;
+  background: url('/src/assets/icons/bg_habittracker.svg') no-repeat center center;
+  background-size: contain;
+  animation: scale-up-down 60s ease-in-out infinite;
+  transform-origin: center;
+  z-index: -1;
+  pointer-events: none;
+  perspective: 1000px;
+
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--background-color);
+  }
+  .text-primary {
+    color: var(--text-primary-color);
+  }
+  .text-secondary {
+    color: var(--text-secondary-color);
+  }
+  .bg-main {
+    background-color: var(--main-color);
+  }
+  .bg-accent {
+    background-color: var(--accent-color);
+  }
+  .bg-secondary {
+    background-color: var(--secondary-color);
+  }
+  .bg-background {
+    background-color: var(--background-color);
+  }
+  .border-custom {
+    border-color: var(--border-color);
+  }
+  .font-custom {
+    font-family: var(--font-family);
+  }
+
+  @keyframes scale-up-down {
+    0%, 100% {
+      transform: scale(1);
+      rotate: 8deg;
+    }
+    50% {
+      transform: scale(1.05);
+      rotate: -8deg;
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .animate-spin-slow {
+    animation: spin-slow 240s linear infinite;
+  }
+}

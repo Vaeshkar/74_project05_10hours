@@ -1,7 +1,7 @@
 /**
  * ProgressActions component for displaying progress controls
  *
- * @param {*} { count, target, onIncrement, onDecrement } 
+ * @param {*} { count, target, onIncrement, onDecrement, onDelete } 
  * @return 
  */
 const ProgressActions = ({ count, target, onIncrement, onDecrement }) => {
@@ -12,7 +12,7 @@ const ProgressActions = ({ count, target, onIncrement, onDecrement }) => {
           console.log('Decrement clicked, count:', count);
           onDecrement();
         }}
-        className="px-4 py-2 text-black bg-white border border-black rounded-full hover:bg-black hover:text-white disabled:opacity-50 transition-colors"
+        className="btn"
         disabled={count <= 0}
       >
         −
@@ -23,7 +23,7 @@ const ProgressActions = ({ count, target, onIncrement, onDecrement }) => {
           console.log('Increment clicked, count:', count);
           onIncrement();
         }}
-        className="px-4 py-2 text-black bg-white border border-black rounded-full hover:bg-black hover:text-white disabled:opacity-50 transition-colors"
+        className="btn"
         disabled={count >= target}
       >
         ＋

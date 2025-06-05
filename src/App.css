@@ -1,15 +1,5 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f0f0f0; /* Light gray background */
-}
 
 body {
   font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', 'Arial', sans-serif;
@@ -17,5 +7,5 @@ body {
 
 /* In index.css or a component-level .css file */
 .btn {
-  @apply px-4 py-2 text-black bg-white border border-black rounded-full hover:bg-black hover:text-white transition-colors;
+  @apply px-4 py-2 text-black bg-white border-2 border-black rounded-full hover:border-2 hover:border-[#4a90e2] hover:bg-black hover:text-white transition-colors cursor-pointer;
 }

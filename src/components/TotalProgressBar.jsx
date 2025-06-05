@@ -17,22 +17,28 @@ const TotalProgressBar = ({ habits, setHabits }) => {
     setHabits([]);
   };
 
+  const getProgressColor = (progress) => {
+  if (progress < 33) return '#fdd603'; 
+  if (progress < 66) return '#ffabd6'; 
+  return '#01b567'; 
+};
+
   return (
     <div className="my-4">
       <h3 className="text-lg font-semibold">Total Progress</h3>
-      <div className="relative h-4 bg-gray-200 rounded">
+      <div className="relative h-10 bg-gray-200 rounded-full overflow-hidden shadow-inner">
         <div
-          className="absolute top-0 left-0 h-full bg-green-500 rounded"
-          style={{ width: `${progress}%` }}
+          className="absolute top-0 left-0 h-full bg-secondary rounded-full transition-colors duration-500 shadow-inner"
+          style={{ width: `${progress}%`, backgroundColor: getProgressColor(progress) }}
         ></div>
       </div>
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-secondary mt-2">
         {total} / {target} completed
       </p>
-      <div className="flex justify-center gap-4 mb-4">
-        <button onClick={handleReset} className="bg-black text-white px-4 py-2 rounded-full mt-2">Reset Progress</button>
-        <button onClick={handleCompleteAll} className="bg-black text-white px-4 py-2 rounded-full mt-2">Complete All</button>
-        <button onClick={handleClearAll} className="bg-black text-white px-4 py-2 rounded-full mt-2">Clear All</button>
+      <div className="flex justify-center gap-4 my-4">
+        <button onClick={handleReset} className="btn">Reset Progress</button>
+        <button onClick={handleCompleteAll} className="btn">Complete All</button>
+        <button onClick={handleClearAll} className="btn">Clear All</button>
       </div>
     </div>
   );
