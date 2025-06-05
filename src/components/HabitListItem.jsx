@@ -33,6 +33,12 @@ const HabitListItem = ({ habit, onIncrement, onDecrement, onDelete }) => {
             <h3 className="font-bold text-xl">{habit.name}</h3>
             <p className="font-bold opacity-50">Progress: {habit.count} / {habit.target}</p>
           </div>
+          <ProgressActions
+            habitId={habit.id}
+            onIncrement={onIncrement}
+            onDecrement={onDecrement}
+            onDelete={onDelete}
+          />
           <button
             onClick={(e) => {
               e.stopPropagation();
@@ -42,12 +48,6 @@ const HabitListItem = ({ habit, onIncrement, onDecrement, onDelete }) => {
           >
             X
           </button>
-          <ProgressActions
-            habitId={habit.id}
-            onIncrement={onIncrement}
-            onDecrement={onDecrement}
-            onDelete={onDelete}
-          />
         </div>
       </div>
     </li>
