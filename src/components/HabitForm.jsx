@@ -29,7 +29,8 @@ const HabitForm = ({ setHabits }) => {
     setHabits((prev) => [...prev, habit]); // Update habits state
     setName(''); // Clear name input
     setTarget(''); // Clear target input
-    toast.success('Habit added!'); // Show success notification
+    toast.success("Habit added!"
+    ); // Show success notification
     
   };
 

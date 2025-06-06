@@ -1,6 +1,6 @@
 const TotalProgressBar = ({ habits, setHabits }) => {
   const total = habits.reduce((acc, habit) => acc + habit.count, 0);
-  const target = habits.length;
+  const target = habits.reduce((acc, habit) => acc + habit.target, 0);
   const progress = target > 0 ? (total / target) * 100 : 0;
 
   const handleReset = () => {
