@@ -67,6 +67,10 @@ This project is an opportunity to strengthen your React fundamentals while build
 
 ## 📋 Changelog
 
+### v2.6.0
+
+- Changed the Total Progress bar to display the total habits
+
 ### v2.5.0
 
 - mobile delete button solution `useLongPress`
